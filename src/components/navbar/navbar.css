@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  padding: 0 80px;
+  justify-content: space-between;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #fff;
+}
+.links {
+  display: flex;
+  align-items: center;
+  /* margin-right: auto;
+  margin-left: 25px; */
+  gap: 25px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.shop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop img {
+  height: 30px;
+}
+
+.shop h3 {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+}
+
+.shopContainer {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 120%;
+  width: 250px;
+  left: -500%;
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.3);
+  height: 29vh;
+  padding: 10px;
+  overflow-y: scroll;
+  gap: 15px;
+}
+
+.shopCard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopCard img {
+  width: 50%;
+  object-fit: cover;
+  /* height: 100%; */
+}
+
+.shopContent h1 {
+  font-size: 14px;
+  /* width: 50%; */
+}
+
+.shopContainer.active {
+  display: flex;
+}
